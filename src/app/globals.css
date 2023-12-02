@@ -1,0 +1,80 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-bg);
+}
+p{
+    color: unset;
+    text-decoration: none;
+}
+.--gradiant_bg{
+    background: linear-gradient(90deg, rgba(0, 40, 83, 1) 2%, rgba(0, 40, 83, 1) 49%, rgba(4, 12, 24, 1) 100%);
+}
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.section_padding{
+    padding: 3rem 5rem;
+}
+.section_margin{
+    margin: 3rem 5rem;
+}
+
+
+/* use animestar.net website animantion */
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .section_padding{
+        padding: 3.5rem;
+    }
+    .section_margin{
+        margin: 3.5rem;
+    }
+ 
+  }
+  @media screen and (max-width:550px) {
+    .section_padding{
+        padding: 4rem 2rem;
+    }
+    .section_margin{
+        margin:4rem 2rem;
+    }
+ 
+  }
+  
